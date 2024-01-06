@@ -1,0 +1,17 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    font-family: 'Rubik Glitch', system-ui;
+    --fundo: #27231c;
+    --link: #7c8569;
+    --texto: #a4ab80;
+    --borda: #e8e0ae;
+    --acao:  #de733e;
+}
+
+body{
+    background: var(--fundo);
+}
+
+
