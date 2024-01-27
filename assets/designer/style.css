@@ -1,17 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 :root{
-    font-family: 'Rubik Glitch', system-ui;
-    --fundo: #27231c;
-    --link: #7c8569;
-    --texto: #a4ab80;
-    --borda: #e8e0ae;
-    --acao:  #de733e;
+    --fonte: 'Rubik Glitch', system-ui;
+    --fundo: #000000;    
+    --texto: #F0A818;
+    --fundoTexto: #181848;
+    --borda: #7890AB;
+    --acao:  #304878;
 }
 
 body{
     background: var(--fundo);
+    
 }
 
+/* Menu Inicial */
+header {    
+    background: var(--acao);
+    padding: 20px 0;   
+}
 
+.caixa{        
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;       
+    align-items: center;
+
+}
+
+nav li{
+    display: inline-block;
+    margin: 5px;
+}
+.logo{
+    width: 80px;    
+    height: auto;
+    margin-left: 6px;
+    border-radius: 50%;
+}
+nav a{    
+    color: var(--texto);
+    background: var(--fundoTexto);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: 500ms ease-in-out;
+}
+
+nav a:hover{
+    background: var(--borda);
+    color: var(--fundo);
+}
+
+/*Conteudo principal */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background: rgba(231, 224, 179, 0.25);
+    box-shadow: 0 8px 52px 0 rgba(208, 218, 167, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    
+}
+
+/*Primeira Section */
+
+.section01{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.tittle{
+    color: var(--texto);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.imgMain{
+    width: 500px;
+    height: auto;          
+}
+
+.paragrafo{
+    color: var(--texto);
+    font-size: 16px;
+}
