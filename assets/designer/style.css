@@ -23,7 +23,7 @@ body{
 .imgContent{
     display: flex;
     width: 500px;
-    height: auto;
+    height: auto;    
 }
 
 /* Menu Inicial */
@@ -72,6 +72,7 @@ nav a:hover{
 .container{
     display: flex;
     flex-direction: column;
+    height: auto;    
     margin: 30px;
     background: rgba(231, 224, 179, 0.25);
     box-shadow: 0 8px 52px 0 rgba(208, 218, 167, 0.37);
@@ -98,19 +99,22 @@ nav a:hover{
 .imgMain{
     display: flex;
     width: 500px;
-    height: auto;      
+    height: auto;
+      
 }
 
 .paragrafo{
     color: var(--texto);
     font-size: 16px;
+    margin: 8px;
+    text-align: center;
 }
 
 /*Segunda Section*/
 
 .section02{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
     margin: 15px;
@@ -158,8 +162,41 @@ nav a:hover{
     animation-delay: 700ms;
 }
 
+.imgCentral{
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
 
+.imgCentralcontent{
+    width: 300px;
+    margin: 15px;
+}
 
+/*Quarta Section*/
+
+.section04{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;    
+}
+
+.section04 a {
+    padding: 10px;
+    text-decoration: none;    
+    color: var(--texto);
+}
+
+/*Rodapé da Página*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
 
@@ -239,6 +276,19 @@ nav a:hover{
         margin-right: -9px;
         transition: 800ms ease-in;
         animation-delay: 700ms;
+    }
+
+    .imgCentral{
+        flex-direction: column;
+    }
+
+    .imgCentralcontent{
+        width: 200px;
+        margin: 15px;
+    }
+
+    .section04{        
+        flex-direction: column;          
     }
 
 }
