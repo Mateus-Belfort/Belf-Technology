@@ -200,7 +200,7 @@ nav a:hover{
 
 
 
-@media (width: 375px){
+@media (max-width: 480px){
 
     .imgContent{        
         width: 250px;
